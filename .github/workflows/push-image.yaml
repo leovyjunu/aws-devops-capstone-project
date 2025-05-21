@@ -14,6 +14,6 @@ jobs:
           docker build ./front-end-nextjs/ -t leovyjunu/devops-qr-code-frontend:latest
       - name: push image to docker hub
         run: |
-          docker login -u rishabkumar7 -p ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker login -u leovyjunu -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push leovyjunu/devops-qr-code-backend:latest
           docker push leovyjunu/devops-qr-code-frontend:latest
